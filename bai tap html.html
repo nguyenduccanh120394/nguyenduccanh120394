@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="Lucida Grande">
+    <title>Tao form</title>
+    <style>
+        .wufoo
+        {
+            font-family: "lucida Grande", "Lucida Sans Unicode",Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<form method="get" action="simpleform.html" class="wufoo">
+    <P>What would you like to buy?</P>
+    <select>
+        <OPTION VALUE=" ">A</OPTION>
+        <OPTION>(+ 0,5$) B </OPTION>
+        <OPTION>(+ 0,5$) C </OPTION>
+    </select>
+    <p>How many would you like to order</p>
+    <input type="radio" name="$"/>1 - $10<br>
+    <input type="radio" name="$"/>2 - $20<br>
+    <input type="radio" name="$"/>3 - $25<br>
+    <p>Name<span style="color: darkred;">*</span></p>
+    <label><input type="text" name="Firstname" placeholder="First Name"/></label><!--placeholder dùng để gọi ý thông tin cho người dùng-->
+    <label><input type="text" name="Lastname" placeholder="Last Name"/></label>
+    <p>Email</p><br>
+    <input type="email" NAME="Email" placeholder="Email"/>
+    <p>Phone Number</p><BR>
+    <input type="text" size="5" placeholder="0000"/> -
+    <input type="text" size="5" placeholder="0000"/> -
+    <input type="text" size="5" placeholder="0000"/>
+    <p><input type="button" name="btSubmit" value="Submit"/></p>
+
+</form>
+</body>
+</html>
