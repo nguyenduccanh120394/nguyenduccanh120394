@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập tạo form đơn giản</title>
+<style>
+    caption
+    {
+        background-color: fuchsia;
+    }
+    table
+    {
+        background-color: white;
+    }
+    body
+    {
+        background-color: dodgerblue;
+    }
+</style>
+</head>
+<body>
+<form>
+    <table style="width: 40%; margin-left: 30%;" >
+        <caption>SỞ THÍCH CỦA BẠN</caption>
+
+        <tr>
+            <td><span style="color: blue">Họ và tên</span></td>
+            <td><input type="text" name="name" placeholder="Name"></td>
+        </tr>
+        <tr>
+            <td><span style="color: blue">Email</span></td>
+            <td><input type="Email" name="Email" placeholder="Email"></td>
+        </tr>
+        <tr>
+
+            <td><span style="color: blue">Sở thích</span></td>
+            <td><span style="color: chocolate">
+                <input type="checkbox"name="Thể Thao">Thể Thao &nbsp;
+                <input type="checkbox"name="Âm nhạc">Âm Nhạc &nbsp;
+                <input type="checkbox"name="Đọc Sách">Đọc sách<br>
+                <input type="checkbox"name="Lướt Web">Lướt Web
+                <input type="checkbox"name="Chơi Game">Chơi game
+                <input type="checkbox"name="Điện Ảnh">Điện Ảnh<br>
+                <input type="checkbox"name="Du Lịch">Du Lịch
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="Submit" value="Gửi Thông tin"></td>
+            <td><input type="reset" name="reset " value="Nhập lại"></td>
+            <td></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
