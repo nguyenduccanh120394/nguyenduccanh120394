@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tạo bảng cơ bản</title>
+</head>
+<style>
+    table{
+        font-family: Arial ,sans-serif ;<!--Phông chữ -->
+        border-collapse: collapse;<!--Viền bảng hiển thị nét mảnh-->
+        width: 100%;}<!--Độ rộng 100%-->
+    th{
+        border: 1px #dddddd;<!--Xác định đường viền cho bảng-->
+        text-align: left;<!--Nội dung từng ô căn bên trái-->
+        padding: 8px;<!--Các ô cách nhau 8px-->
+    }
+    td {
+        <!--border: 1px #dddddd-->;<!--Xác định đường viền cho bảng-->
+        text-align: left;<!--Nội dung từng ô căn bên trái-->
+        padding: 8px;<!--Các ô cách nhau 8px-->
+}
+    tr:nth-last-child(odd)
+    {
+        background-color: dodgerblue;
+    }
+
+</style>
+<body>
+<table>
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chan</td>
+        <td>Mexico</td>
+    </tr>
+    <tr>
+        <td>Hadel</td>
+        <td>Mendel</td>
+        <td>Austria</td>
+    </tr>
+    <tr>
+        <td>Island Trading</td>
+        <td>Helen</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>Laughing</td>
+        <td>Yoshi</td>
+        <td>Canada</td>
+    </tr>
+    <tr>
+        <td>Magazini</td>
+        <td>Rovelli</td>
+        <td>Italy</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
