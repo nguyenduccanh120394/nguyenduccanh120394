@@ -19,44 +19,36 @@
             <input id="amount" type="text" value=" " placeholder="Nhập Giá Trị cần quy đổi">
         </td>
         <td>
-            <select id="after">
-                <option id="a">VietNam</option>
-                <option id="b">USD</option>
+            <select id="select1">
+                <option value="a">VietNam</option>
+                <option value="b">USD</option>
             </select>
         </td>
         <td>
-            <select id="before">
-                <option id="b">USD</option>
-                <option id="a">VietNam</option>
+            <select id="select2">
+                <option value="a">VietNam</option>
+                <option value="b">USD</option>
             </select>
         </td>
         <td>
-            <input type="submit" value="Convert" onclick="Convert()">
+            <input type="button" value="Convert" onclick="Convert()">
         </td>
     </tr>
 </table>
-</form>
-
-<!--<script>
+</form><script>
     function Convert() {
-        let amount = document.getElementById('amount').value;
-        let after = document.getElementById('after').value;
-        let ket_qua
+       let select1 = document.getElementById('select1').value;
+       let select2 = document.getElementById('select2').value;
+       let amount = document.getElementById('amount').value;
 
-        {
-        if (after === "VietNam") ;
-        if (after ==="USD") ;
-        ket_qua = amount/23000;
-        if (after === "USD") ;
-        if (after === "VietNam") ;
-        ket_qua = amount*23000;
-
-            alert(ket_qua);
+        if (select1 == "a" && select2 =="b"){
+            alert( 'Giá trị quy đổi ='+amount/23000);}
+        if (select1 == select2){
+            alert('Giá trị quy đổi ='+amount);}
+        if (select1 =="b" && select2 =="a"){
+            alert('Giá trị quy đổi ='+amount*23000);
         }
-
     }
-
-
-</script>-->
+</script>
 </body>
 </html>
