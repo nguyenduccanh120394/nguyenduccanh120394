@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng máy tính</title>
+</head>
+<body >
+<form>
+    <div>
+    <input id="n1" type="text"  placeholder="Nhập giá trị 1"/>
+    <input id="n2" type="text"  placeholder="Nhập giá trị 2"/>
+    <br>
+    <input type="button" value="Addition(+)" onclick="Addition()"/>
+    <input type="button" value="Subtraction(-)" onclick="Subtraction()"/>
+    <input type="button" value="Multiplication(X)" onclick="Multiplication()"/>
+    <input type="button" value="Division(/)" onclick=" Division()" />
+    <br>
+    <br>
+     Kết quả:<input type="text"  id="ket_qua" name="kết quả" />
+    <script>
+        function Addition(){
+        let n1 = document.getElementById('n1').value;
+        let n2 = document.getElementById('n2').value;
+            document.getElementById('ket_qua').value = parseInt(n1)+parseInt(n2);
+        }
+        function Subtraction(){
+            let n1 = +document.getElementById('n1').value;
+            let n2 = +document.getElementById('n2').value;
+            document.getElementById('ket_qua').value = parseInt(n1)-parseInt(n2);
+        }
+        function Multiplication(){
+            let n1 = +document.getElementById('n1').value;
+            let n2 = +document.getElementById('n2').value;
+            document.getElementById('ket_qua').value = parseInt(n1)*parseInt(n2)
+        }
+        function Division(){
+            let n1 = +document.getElementById('n1').value;
+            let n2 = +document.getElementById('n2').value;
+            document.getElementById('ket_qua').value = parseInt(n1)/parseInt(n2)
+        }
+    </script>
+    </div>
+</form>
+
+</body>
+</html>
