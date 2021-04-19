@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng vui Do you love me</title>
+</head>
+<body>
+<p style="margin-left: 300px ; margin-top:100px ;font-weight: bold;">
+    DO YOU LOVE ME ?
+</p>
+<input style="margin-left:300px " id="yes" type="button" value="YES" onclick="Click()" >
+<input  id="no" type="button" value="NO" onmouseout="Mouseout()" style="position: absolute">
+<script>
+    function Click(){
+        document.getElementsByName('yes').value;
+        alert('<3')
+    }
+    function Mouseout(){
+        document.getElementById('no').style.left = Math.round(Math.random() * window.innerWidth) + 'px';
+        document.getElementById('no').style.top = Math.round(Math.random() * window.innerHeight) + 'px';
+    }
+</script>
+</body>
+</html>
+

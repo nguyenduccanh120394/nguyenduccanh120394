@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<script>
+    let so_luot_choi =5
+    let luot_choi_hien_tai = 0
+
+    let so_la_bai = Math.random() * (14 - 1) + 1;
+    so_la_bai = Math.floor(so_la_bai);
+
+    let mau_la_bai = Math.random() * (3 - 1) + 1;
+    mau_la_bai = Math.floor(mau_la_bai);
+
+    let trai_tim = Math.random() * (3 - 1) + 1;
+    trai_tim = Math.floor(trai_tim);
+
+    let diem_doi_A = 0;
+    let diem_doi_B = 0;
+    while (luot_choi_hien_tai < so_luot_choi){
+    if (so_la_bai < 5) {
+        if (mau_la_bai === 2) {
+            diem_doi_A += so_la_bai;
+        } else {
+            diem_doi_B++;
+        }
+    } else if (trai_tim === 1) {
+        diem_doi_A++;
+    }
+
+    document.write("Điểm của đội A là " + diem_doi_A);
+    document.write("<br/>");
+    document.write("Điểm của đội B là " + diem_doi_B);
+    luot_choi_hien_tai++;}
+
+</script>
+
+</body>
+</html>

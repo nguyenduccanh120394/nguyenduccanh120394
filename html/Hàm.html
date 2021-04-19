@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="demo.js"></script>
+</head>
+<body>
+<!--<h1> Temperature Converter </h1>
+<h2>Type a value in the Fahrenheit convert the value to Celcius </h2>
+Fahrenheit&nbsp;&nbsp;&nbsp;<input type="number" id="nhap" oninput="square()"><br>
+
+
+<script>
+    let F = document.getElementById('nhap').value;
+    function square(){
+        let result = parseInt(F)
+        alert(F)
+    }
+</script>-->
+<!--<script>
+    let x = ['a','2','3','b','5']
+    let y = [1,'a',3,'b',5,6,7,8,9]
+    for (let i=0;i<x.length;i++)
+        for (let j=0;j<y.length;j++)
+        if (x[i]==y[j]){
+        document.write('Ký tự là số  '+ i + ' là : ' + x[i] +'<br>')
+        }
+</script>-->
+<!--<script>
+        function so_nguyen_to(n){
+            if (n < 2)
+                return false;
+            for (i=2;i<n;i++){
+                if (n%i==0)
+                    return false;
+            }
+            return true;
+        }
+        let count = 0;
+        number =1;
+        let quan=+prompt("Hãy nhập số lượng: ")
+        document.write("Danh sach cac so nguyên tố :"+"<br>");
+        while (count<quan) {
+            if (so_nguyen_to(number) == true) {
+                count++
+                document.write(number+";");
+            }
+            number++;
+        }
+
+</script>--><!--số nguyên tố ???-->
+<!--<script>
+function alertMessage(){
+     document.write('Xin chao')
+}
+  alertMessage()
+</script>--><!--Bai 1 lt1-->
+<!--<script>
+    function luyentap(number){
+        ket_qua=number*number;
+        document.write(ket_qua)
+    }
+    luyentap(4)
+</script>--><!--Bai 2 lt1-->
+<!--<script>
+    function sosanh(a,b){
+        if (a>b){
+            alert("Số a lơn hơn số b")
+        }else{
+            document.write(a+b);
+        }
+    }
+    sosanh(2,3)
+</script>--><!--Bai 3 lt1-->
+<!--<script>
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 5;
+        result = firstNum + secondNum;
+        alert(result)
+        return result;
+    }
+    result = 0;
+    result = addNumbers();
+
+</script>--><!--Bai 4 ??????????? lt1-->
+<!--<script>
+    function search(){
+        let inp= prompt("Nhập từ cần tìm")
+        x=['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+        y=['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+        for (i=0;i<x.length;i++){
+            if (inp==x[i])
+                return document.write(y[i]);
+        }
+        document.write('not found');
+    }
+    search();
+</script>--><!--Bai 5 lt1-->
+<!--<script>
+    function square(x){
+        result = x*x;
+        document.write(result)
+    }
+   square(10);
+</script>--><!--Bai 1 lt2-->
+<!--<script>
+    function s(r){
+        let result = r*r*3.14;
+        document.write("Diện tich hình tròn với bán kính "+r+" là "+result)
+    }
+    function c(r){
+        let chuvi = 2*r*3.14;
+        document.write("Chu vi hình tròn với bán kính "+r+" là "+chuvi)
+    }
+
+    let r = prompt("Nhập vào bán kính hình tròn")
+    s(r);
+    document.write('<br>')
+    c(r)
+</script>--><!--Bai 2 lt2-->
+<!--<script>
+    let n = prompt("Nhập số cần tính")
+    let number = 1
+    function tinh_giai_thua(n){
+        for (let i =1;i<=n;i++){
+            number*=i;
+        }
+        document.write("Giai thừa của "+n+" là "+number)
+    }
+tinh_giai_thua(n);
+</script>--><!--Bai 3 lt2-->
+<!--<script>
+    let n= prompt("Nhập vào ký tự");
+    function test(n){
+        let kt = n-n
+      if (kt==0){
+          document.write("true")
+      }else {
+          document.write("false")
+      }
+        }
+    test(n);
+</script>--><!--Bai 4 lt2-->
+<!--<script>
+    let n1=prompt("Nhập số thứ nhất");
+    let n2=prompt("Nhập số thứ hai");
+    let n3=prompt("Nhập số thứ ba")
+    function timmin(n1,n2,n3){
+        x = [n1,n2,n3];
+        let min = x[0]
+        for (let i=1 ;i < x.length; i++){
+            if (x[i]<min){
+                min=x[i];
+            }
+        }
+        document.write("Giá trị nhỏ nhất là "+min)
+    }
+   timmin(n1,n2,n3);
+</script>--><!--Bai 5 lt2-->
+<!--<script>
+    let n=prompt("Nhập vào 1 số cần kiểm tra ")
+    function testnumber(n) {
+        if (n - n === 0 && n % 1 === 0) {
+            if (n > 0) {
+                document.write("Đây là số nguyên dương")
+            }
+            if (n < 0) {
+                document.write("Đây là số nguyên âm")
+            }
+        } else{
+                document.write("Đây không là số nguyên")
+        }
+            }
+    testnumber(n);
+</script>--><!--Bai 6 lt2-->
+<!--<script>
+    let n1 = prompt("nhập vào number 1")
+    let n2 = prompt("Nhập vào number 2")
+     x=[n1,n2];
+    function hoan_doi(){
+        while (n1>n2){
+        let b = n1
+        n1 = n2
+        n2 = b
+        }
+        document.write(x)
+    }
+    hoan_doi()
+</script>--><!--Bai 7 ?????????lt2-->
+<!--<script>
+    let n1=prompt("")
+    let n2=prompt("")
+    let n3=prompt("")
+    let n4=prompt("")
+    let n5=prompt("")
+    let n6=prompt("")
+    let x=[n1,n2,n3,n4,n5,n6]
+    function reversenum(x){
+        let b =x.reverse()
+        document.write(y)
+    }
+    reversenum(x);
+</script>--><!--Bai 8 lt2-->
+<!--<script>
+    let x=['a',1,3,2,5,'b','a']
+    let n=prompt("Nhập ký tự cần kiểm tra");
+    let count = 0;
+    function kiemtra(n,x){
+        for (i=0;i<x.length;i++){
+            if (x[i]==n)
+                count++
+            document.write('<br>'+'Ký tự '+n+' có nằm trong mảng x '+'<br>')
+        }
+        document.write(count+" lần")
+        return count;
+       document.write('-1');
+
+    }
+    kiemtra(n,x);
+</script>--><!--Bai 9 lt2-->
+<h2 style="border: black">Add New Product</h2>
+<input typeof="text"id=" ">
+<input type="button" style="background: aquamarine" value="Add" onclick=" ">
+<h4 style="border: black">Display All Product</h4>
+   <table id="displayArea" border="1">
+
+   </table>
+<script>
+   let listProduct = ['Iphone12','Note 10','S10','Iphone13','Nokia 1280'];
+   let str = '<tr>\n'+
+            '<td>Product Name</td>\n'+
+            '<td></td>\n'+
+            '<td>'+listProduct.length +'products</td>\n'
+            ' </tr>';
+   for (let i = 0; i<listProduct.length;i++){
+       str = '<tr>\n'+
+           
+   }
+</script>
+</body>
+</html>

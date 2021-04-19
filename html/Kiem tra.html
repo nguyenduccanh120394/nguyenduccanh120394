@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>
+ let x = [1,2,3,4,5,6,7,8,9]
+ function tinh_tong_le(x){
+     let sum =0;
+   for (let i=0;i<x.length;i++){
+       if (x[i]%2!==0){
+          sum +=x[i]
+       }
+    }
+   document.write(sum)
+ }
+ tinh_tong_le(x);
+</script>--><!--Bai 1-->
+<!--<script>
+    let number = prompt("Nhập vào số cần kiểm tra")
+    function testnumber(number) {
+        let sum = 0;
+        for (let i = 1; i < number; i++) {
+            sum += i
+            if (number % i == 0 && number == sum) {
+                return document.write("Đây là số hoàn hảo")
+            }
+        }document.write("Đây không phải số hoàn hảo")
+    }
+    testnumber(number);
+</script>--><!--Bai 2-->
+<!--<script>
+    let x = [2,3,4,5,6,7,8,9,1,28]
+    function indexof(x){
+        for (let i = 0;i<x.length;i++) {
+            let sum = 0;
+            for (let j = 1; j < x[i]; j++) {
+                sum += j;
+                if (sum == x[i] && x[i] % j == 0) {
+                    document.write(x[i] + " là số hoàn hảo tại vị trí" + i + '<br>')
+                }
+            }
+        }
+    }
+    indexof(x);
+</script>--><!--Bai 3-->
+<!--<script >
+    let linenumber = prompt("Nhập số dòng")
+for (i=0;i<linenumber;i++){
+    document.write("<hr width ="+i+"%"+"height = 5%>");
+}
+</script>--><!--bài 4-->
+<button onclick="addClient()">thêm khách hàng</button>
+<table id = "client_list " border="1px"></table>
+<script>
+    let clients = ["Nguyễn Đức Cảnh", "Nguyễn Đức Chiến"];
+    function displayClient(){
+        let str = "";
+        for (let i =0; i < clients.length; i++){
+            str+= '<tr>' +
+                '<td>' +clients[i]+'</td>'+
+                '<td><button onclick="deleteClient('+i+')">xóa</button></td>'+
+                '<td><button onclick="updateClient('+i+')">sửa</button></td>'+
+                '<tr/>'
+        }
+        document.getElementById("client_list ").innerHTML=str;
+    }
+    displayClient();
+    function addClient(){
+        let client = prompt("tên khách hàng");
+        clients.push(client);
+        displayClient();
+    }
+    function updateClient(i) {
+        clients[i] = prompt("nhập một tên mới");
+        displayClient();
+    }
+    function deleteClient(i){
+        let check = confirm("bạn có muốn xóa khách hàng này không");
+        if (check){
+            clients.splice(i,1);
+            displayClient();
+        }else{
+            alert("thôi không xóa nữa");
+        }
+    }
+</script>
+</body>
+</html>

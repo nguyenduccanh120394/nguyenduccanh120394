@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input id="text" type="text" size="30px">
+<input id="add" type="button" value="Add" onclick="add_element_to_array()">
+<input type="button" value="Display" onclick=" ">-->
+<!--<script>
+//let fruit = ['50','105','109'];
+//fruit.reverse();
+//fruit.sort(function (a,b){
+//return a - b
+//})
+// alert(fruit)
+let x = 0
+let array = Array();
+function add_element_to_array(){
+        array(x)=document.getElementById('text').value
+        alert("Element: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById('text').value = " ";
+}
+</script>-->
+<!--<input type="text" id="txtValue"/>
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>
+<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
+<div id="result"></div>
+<script>
+    let x = 0;
+    let array = Array();
+    function add_element_to_array() {
+        array[x] = document.getElementById("txtValue").value;
+        alert("Element: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("txtValue ").value =" ";
+    }
+    function display_array() {
+        let e = "<hr/>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+</script>--><!--[Thực hành] Tạo và thao tác với mảng-->
+<!--<script>
+    let x = [-3,5,1,3,2,10];
+    let first = 0 ;
+    let last = x.length - 1;
+    while (first < last) {
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+    document.write(x)
+</script>--><!--Đảo giá trị trong mảng-->
+<!--<script>
+    let number = +prompt("Nhập giá trị cần tìm");
+    let x = [-3, 5, 1, 3, 2, 10];
+    for (let i= 0 ; i<x.length ; i++){
+        if (x[i]==number){
+            alert('Value' + x[i] + 'found at' + i );
+            break;
+        }
+    }
+
+</script>--><!--[Thực hành] Tìm giá trị trong mảng-->
+<!--<script>
+    let x =[-3, 5, 1, 13, 15, 10]
+    let max = x[0];
+    let index = 0;
+    for (i=1 ; i<x.length ; i++ ){
+        if (x[i] > max ){
+            max = x[i] ;
+            index = i+1;
+        }
+    }
+    document.write(max+"tai vi tri"+index)
+</script>--><!--[Thực hành] Tìm giá trị lớn nhất trong mảng-->
+
+<!--Square of<input id="input" type="text" oninput="caculate()"/>is
+<span id="result"></span>
+<script>
+    function square(number){
+        let result = number*number;
+        return result;
+}
+    function caculate(){
+        let input = document.getElementById('input').value;
+        let result = square(input);
+        document.getElementById('result').innerHTML = result;
+    }
+</script>-->
+
+<!--<input type="text" id="word">
+<input type="button" value="seach" onclick="timkiem()"><br><br>
+<input type="text" id="output" style="position: absolute">
+<script>
+    let english = ['hello', 'goodbye', "computer"];
+    let vietnamese = ['xin chao', 'tạm biệt', 'máy tính'];
+    function timkiem(){
+        let a = document.getElementById("word").value;
+        for (let i = 0; i<english.length; i++){
+            if (a === english[i]){
+                document.getElementById('output').value = vietnamese[i];
+            }
+        }
+    }
+    </script>-->
+<!--<p style="margin-left: 480px; " >Type Anything Slowly</p>
+<input  type="text" id="text" onkeydown="typetext()" style="width: 250px; height: 250px; margin-left:420px">
+<script>
+    let x=['TÔI', 'LÀ','ĐỨA', 'NGỐC']
+
+    function typetext(){
+        for (let i =0; i<x.length; i++){
+            if (document.getElementById('text').value!=x[i]){
+                document.getElementById('text').value = x[0]+x[1]+x[2]+x[3];
+            }
+        }
+    }
+</script>-->
+<!--<script>
+let x = [ 'c', 's', 'c', '2', '6', '1' ];
+    x.reverse();
+    let text = x.join("");
+    document.write('"'+text+'"');
+</script>--><!--Bài 2, lt 2-->
+<!--<script>
+    let x = ['2','1','35','4','7','9','10'];
+    for (let i = 0;i<x.length;i++){
+        document.write("Số ký tự của mảng là "+x.length)
+        break;
+    }
+</script>--><!--Bài 3, lt 2-->
+<!--<script>
+    let x = ['a',2,3,'b',5]
+    for (let i=0;i<x.length;i++){
+        document.write("Ký tự thứ " + i +"là:"+ typeof x[i] +"<br>")
+    }
+</script>--><!--Bài 4, lt 2-->
+<!--<script>
+    let n1 = prompt('Nhập chuỗi 1');
+    let n2 = prompt('Nhập chuỗi 2');
+    if (n1==n2){
+        alert('2 chuỗi giống nhau')
+    }else{
+        alert('2 chuỗi khác nhau')
+    }
+</script>--><!--Bài 5, lt 2-->
+<!--<script>
+    let x = ['-','@','#','%','^','-','*']
+    for (let i=0;i<x.length;i++){
+        if (x[i]=='-'){
+            document.write("Ký tự"+x[i]+"tại vị trí"+i+"<br>" )
+            x[i]='_'
+        }}
+            document.write(" Chuỗi sau khi thay thế là:"+'<br>'+x+"<br>")
+</script>--><!--Bài 6, lt 2-->
+
+<!--<script>
+    let array = [];
+    let str = "";
+    array[1]='T';
+    array[2]='Ô';
+    array[3]='I';
+    array[4]=' ';
+    array[5]='L';
+    array[6]='À';
+    array[7]=' ';
+    array[8]='M';
+    array[9]='Ộ';
+    array[10]='T';
+    array[11]=' ';
+    array[12]='T';
+    array[13]='H';
+    array[14]='Ằ';
+    array[15]='N';
+    array[16]='G';
+    array[17]=' ';
+    array[18]='N';
+    array[19]='G';
+    array[20]='Ô';
+    array[21]='C';
+    array[22]='!';
+
+    function fake()
+    {
+        let text = document.getElementById("txt").value;
+        let j = text.length;
+        if (j > 0)
+        {
+            for(let i = 1; i <= j; i++)
+            {
+                str = str + array[i];
+                if (i === 22)
+                {
+                    document.getElementById("txt").value= "";
+                    str = "";
+                }
+            }
+        }
+        document.getElementById("txt").value = str;
+        str = "";
+        setTimeout("fake()", 1);
+    }
+
+
+
+</script>-->
+<h1>Type anything slowly</h1>
+<textarea id="inp" onkeydown="thayDoi()"></textarea>
+<script>
+    let str ='TÔI LÀ MỘT ĐỨA NGỐC';
+    let inp = document.getElementById('inp');
+    let s = '';
+    let ind = 0;
+    function thayDoi(){
+        s+=str[ind];
+        inp.value = s;
+        ind++;
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Game puzzle</title>
+    <style>
+        img
+        {
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+<img id="pic1" src="../img/animal1x1.jpg" height="100" width="600" onclick="Click1()"/><br>
+<img id="pic2" src="../img/animal2x1.jpg" height="100" width="600" onclick="Click2()"/><br>
+<img id="pic3" src="../img/animal3x1.jpg" height="100" width="600" onclick="Click3()"/><br>
+<img id="pic4" src="../img/animal4x1.jpg" height="100" width="600" onclick="Click4()"/><br>
+<img id="pic5" src="../img/animal5x1.jpg" height="100" width="600" onclick="Click5()"/>
+<script>
+        let a = 1;
+    function Click1(){
+        if (a>=3) {
+            a = 1;
+        }
+        else {
+            a++;
+        }
+        document.getElementById('pic1').src = '../img/animal1x'+ a +'.jpg'
+    }
+    function Click2(){
+        if (a>=3) {
+            a = 1;
+        }
+        else {
+            a++;
+        }
+        document.getElementById('pic2').src = '../img/animal2x'+ a +'.jpg'
+    }
+    function Click3(){
+        if (a>=3) {
+            a = 1;
+        }
+        else {
+            a++;
+        }
+        document.getElementById('pic3').src = '../img/animal3x'+ a +'.jpg'
+    }
+        function Click4(){
+            if (a>=3) {
+                a = 1;
+            }
+            else {
+                a++;
+            }
+            document.getElementById('pic4').src = '../img/animal4x'+ a +'.jpg'
+        }
+        function Click5(){
+            if (a>=3) {
+                a = 1;
+            }
+            else {
+                a++;
+            }
+            document.getElementById('pic5').src = '../img/animal5x'+ a +'.jpg'
+        }
+   </script>
+</body>
+</html>

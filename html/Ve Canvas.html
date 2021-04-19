@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ve Canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100">
+    Your browser does not support the HTML5 canvas tag
+</canvas>
+<!--<script>
+    let c = document.getElementById('myCanvas');
+    let ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(100,50,50,0,2*Math.PI);
+    ctx.stroke();
+</script>--><!--Ve hinh tron-->
+<!--<script>
+    let c = document.getElementById('myCanvas');
+    let ctx = c.getContext("2d");
+    ctx.font= "30 px Arial";
+    ctx.fillText("Hello World",100,100);
+</script>--><!--Ve duong thang-->
+<script>
+    let c = document.getElementById('myCanvas');
+    let ctx =c.getContext("2d");
+    let grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(0,"White");
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,10)
+
+</script>
+</body>
+</html>

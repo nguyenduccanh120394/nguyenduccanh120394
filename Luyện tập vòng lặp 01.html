@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập vòng lặp 01</title>
+</head>
+<body>
+    <!--<script>
+        function so_nguyen_to(num){
+            if (num < 2)
+                return false;
+            for (i=2;i<num;i++){
+                if (num%i==0)
+                    return false;
+            }
+            return true;
+        }
+        let count = 0;
+        number =1;
+        let quan=+prompt("Hãy nhập số lượng: ")
+        document.write("Danh sach cac so nguyên tố :"+"<br>");
+        while (count<quan) {
+            if (so_nguyen_to(number) == true) {
+                count++
+                document.write(number+";");
+            }
+            number++;
+        }
+
+    </script>-->
+<!--<script>
+    let n= prompt('Nhập sô')
+    let i = 1;
+        while (i<n){
+        document.write(i+"<br>");
+        i++;
+        }
+        if (i==99){
+            document.write("Hoàn thành")
+        }
+
+</script>--><!--Bài 1-->
+<!--<script>
+    let n = prompt('Nhập nhiệt độ');
+    let i = 0;
+    if (n<100 && n>20){
+        document.write("Nhiệt độ của bạn là:" + n )  ;
+    }
+    while (n!=0) {
+        if (n > 100) {
+            alert("Vui long giảm nhiệt độ");
+        } else if (n < 20)
+            alert("Vui lòng tăng nhiệt độ");
+    n = prompt('Nhập nhiệt độ');
+    }
+
+</script>--><!--Bài 2-->
+<!--<script>
+    function fibolist(quantity){
+        st1=0;
+        st2=1;
+        count=2;
+        document.write("Danh sach so fibonacci: "+st1+" "+st2+";");
+        while(count<quantity){
+            st3=st1+st2;
+            count++;
+            document.write(st3+";");
+            st1=st2;
+            st2=st3;
+        }
+    }
+    fibolist(20);
+
+</script>--><!--Bài 3-->
+<!--<script>
+    function fibolist(quantity){
+        st1=0;
+        st2=1;
+        count=2;
+        while(count<quantity){
+            st3=st1+st2;
+            count++;
+            st1=st2;
+            st2=st3;
+            if (st3%5==0){
+                return document.write("số đầu tiên chia hết cho 5 là:"+st3);
+            }
+        }
+    }
+    fibolist(20);
+</script>--><!--Bài 4-->
+<!--<script>
+    function fibolist(quantity){
+        st1=0;
+        st2=1;
+        count=2;
+        document.write("Danh sach so fibonacci: "+st1+" "+st2+";");
+        sum = 1;
+        while(count<quantity){
+            st3=st1+st2;
+            count++;
+            document.write(st3+";");
+            st1=st2;
+            st2=st3;
+            sum += st3
+        }
+    }
+    fibolist(5);
+    document.write("Tổng 20 số là : "+sum);
+</script>--><!--Bài 5-->
+<!--<script>
+        let count = 0;
+        let number = 1;
+        let sum =0;
+        document.write("Danh sach cac so vua chia het cho 7 <br>")
+        while (count<30) {
+            if (number % 7 == 0) {
+                count++;
+                sum += number
+                document.write(number + " ")
+            }
+            number++;
+        }
+        document.write("<br>Tong cac so: "+sum);
+</script>--><!--Bài 6-->
+<!--<script>
+    for (let i = 1; i <= 100; i++)
+        if (i % 3 == 0) {
+            document.write('Fizz' + ';');
+        }else if (i % 5 == 0) {
+            document.write('Buzz' + ';');
+        }else if (i % 3 == 0 && i % 5 == 0) {
+            document.write('FizzBuzz' + ';');
+        }else  {
+            document.write(i+";");
+        }
+    }
+// for (let i = 1; i <= 100; i++) {
+//     let output = '';
+//          if(i % 3 == 0){ output += 'Fizz'
+//    }       if(i % 5 == 0) {
+//              output += 'Buzz'
+//    }
+//  console.log(output || i);}
+
+</script>--><!--Bài 7-->
+<!--<input type="button" value="Chơi" onclick="play()">
+<script>
+    function play(){
+    let gt1 = +prompt("Nhập giá trị min");
+    let gt2 = +prompt("Nhập giá trị Max");
+    let ket_qua = Math.floor(Math.random()*(gt2-gt1)+gt1);
+    let soluotchoi = +prompt("Nhâp số lượt chơi");
+        for (i=0;i<soluotchoi;i++){
+            let change = +prompt("Nhập giá trị bạn đoán");
+            if (change==ket_qua){
+                alert("Chúc mừng bạn đã chọn đúng");
+                break;
+            } else if (change<ket_qua){
+                alert("Bạn hãy nhập số lơn hơn");
+            }else {
+                alert("Bạn hãy nhập số bé hơn");
+            }
+
+        }
+
+    }
+</script>--><!--Bài 8-->
+
+</body>
+</html>
