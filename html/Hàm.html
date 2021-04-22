@@ -220,24 +220,48 @@ tinh_giai_thua(n);
     }
     kiemtra(n,x);
 </script>--><!--Bai 9 lt2-->
-<h2 style="border: black">Add New Product</h2>
-<input typeof="text"id=" ">
-<input type="button" style="background: aquamarine" value="Add" onclick=" ">
-<h4 style="border: black">Display All Product</h4>
-   <table id="displayArea" border="1">
-
-   </table>
+<!--<button onclick="addFruit()">Thêm hoa quả</button>
+<table id="fruit" border="1px"></table>
 <script>
-   let listProduct = ['Iphone12','Note 10','S10','Iphone13','Nokia 1280'];
-   let str = '<tr>\n'+
-            '<td>Product Name</td>\n'+
-            '<td></td>\n'+
-            '<td>'+listProduct.length +'products</td>\n'
-            ' </tr>';
-   for (let i = 0; i<listProduct.length;i++){
-       str = '<tr>\n'+
-           
-   }
-</script>
+    class Fruit {
+        constructor(_id,_name,_price,_image) {
+            this.id = _id;
+            this.name = _name;
+            this.price = _price;
+            this.image = _image
+        }
+    }
+    let apple = [1, "Apple", 3000];
+    let mangoObj = new Fruit(10, "Mango", 10000);
+    mangoObj.image = 'https://cdn.dribbble.com/users/2172174/screenshots/10664320/media/586ef6ea7443418799fa964c28f30308.png?compress=1&resize=400x300';
+    let cucumberObj = new Fruit(11, "Quả dưa chuột", 8000);
+    let obj3 = new Fruit(12, "Quả cam", 8000);
+    let obj4 = new Fruit(13, "Quả dưa hấu", 8000);
+
+    let fruits = [mangoObj, cucumberObj,obj3,obj4];
+    function addFruit() {
+        let id = prompt("Nhập id");
+        let name = prompt("Nhập tên");
+        let price = prompt("Nhập giá");
+        let image = prompt("Nhập ảnh");
+        let fruit = new Fruit(id, name, price, image);
+        fruit.push(fruit);
+        display();
+    }
+    function display(){
+        let str =" ";
+        for (let i =0; i<fruit.length;i++){
+            str += '<tr>'
+            str += '<td>'+fruit[i].id+'</td>';
+            str += '<td>'+fruit[i].name+'</td>';
+            str += '<td>'+fruit[i].price+'</td>';
+            str += '<td>'+fruit[i].image+'</td>';
+            str += '</tr>';
+        }
+        document.getElementById('fruit').innerHTML = str;
+    }
+    display();
+</script>-->
+
 </body>
 </html>
